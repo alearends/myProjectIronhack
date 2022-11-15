@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* Colors
+#072ACB      #43D2FF     #A2D6F9     #D1EDFF
+#292E47      #6B708D     #F2F4FC     #ECF7FF     #FFC600 */
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #F2F4FC;
+}
+
+
+
+
+/* ------ First Mobile ------- */
