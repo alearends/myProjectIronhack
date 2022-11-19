@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 /* Colors
-#072ACB      #43D2FF     #A2D6F9     #D1EDFF
+#072AC8      #43D2FF     #A2D6F9     #D1EDFF     #F4F6FC
 #292E47      #6B708D     #F2F4FC     #ECF7FF     #FFC600 */
 
 
@@ -12,7 +12,351 @@ body {
     background-color: #F2F4FC;
 }
 
+/* --- UTILITY CLASES INI ---- */
+
+/* --- UTILITY CLASES END ---- */
+
+h1,
+h2,
+h3,
+#gray-p {
+    color: #292E47;
+}
+
+#white-h2,
+.booking,
+.getInTouch-Button,
+.contact-Us {
+    color: #F4F6FC;
+}
+
+.watson {
+    color: #A2D6F9;
+}
+
+p,
+.seeOurWork-Button {
+    color: #6B708D;
+}
+
+#orange-p {
+    color: #FFC600;
+}
+
+/* ---------------------------- */
+/* ------ FIRST MOBILE ------- */
+/* ------- NAVBAR INI ------- */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 7%;
+}
+
+.logo-Circle img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.nav-Menu {
+    display: flex;
+    font-size: 100%;
+    justify-content: right;
+}
+
+.nav-Menu li {
+    list-style: none;
+    display: inline-block;
+    padding: 5%;
+}
+
+.nav-Menu li a {
+    text-decoration: none;
+    color: #6B708D;
+}
+
+/* .menu */
+
+.nav-Menu li a:hover {
+    color: #072AC8;
+}
+
+.contact-Us {
+    display: none;
+}
+
+/* ------- NAVBAR END ------- */
+/* -------- MAIN INI -------- */
+
+main {
+    margin: 3%;
+}
+
+/* -------- MAIN END -------- */
+/* ---- HERO SECTION INI ---- */
+
+.hero-Section {
+    padding: 0 4%;
+}
+
+.hero-Container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-Content {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero-Content h1 {
+    text-align: center;
+    line-height: 130%;
+    margin: 5% 0 2% 0;
+    font-weight: bold;
+    font-size: 180%;
+}
+
+.content-Paragraph {
+    font-weight: 400;
+    line-height: 160%;
+    margin-bottom: 5%;
+    /* font-size: ; */
+}
+
+.content-Button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.getInTouch-Button {
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #072AC8;
+    margin-bottom: 15%;
+    padding: 5% 30px;
+}
+
+.seeOurWork-Button {
+    text-decoration: none;
+    font-size: 110%;
+    font-weight: 500;
+}
+
+.seeOurWork-Button:hover {
+    color: #072AC8;
+}
+
+.hero-Images-Section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hero-Image {
+    width: 80%;
+    margin-top: 20%;
+}
+
+.card1 {
+    display: none;
+}
+
+.card2 {
+    display: none;
+}
+
+/* ---- HERO SECTION END ---- */
+/* --- CLIENT SECTION INI --- */
+
+.client-Section{
+    margin-top: 50px;
+}
 
 
 
-/* ------ First Mobile ------- */
+.client-Container{
+    filter: grayscale(1);
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.client-Container img{
+    width: 90px;
+  height: auto;
+  margin: 5px;
+}
+
+
+
+/* --- CLIENT SECTION END --- */
+
+/* ------------------------------ */
+/* ------ FIRST MOBILE END ----- */
+/* ---------------------------- */
+
+
+/* -- BREAK POINT 1024 INI --- */
+@media (min-width: 1024px) {
+
+    /* ------- NAVBAR INI ------- */
+
+    header {
+        padding: 5% 10% 0 10%
+    }
+
+    #nav-bar {
+        position: static;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #F2F4FC;
+        top: 0;
+        width: 100%;
+        margin: auto;
+        transition: 0s;
+        height: auto;
+        /* -------- */
+        margin-left: 30px;
+    }
+
+    .nav-Menu {
+        display: flex;
+        gap: 20%;
+    }
+
+    .menu {
+        margin: auto;
+    }
+
+    .contact-Us {
+        display: block;
+        transition: 0, 5s;
+        background-color: #072AC8;
+        /* font-size: ; */
+        padding: 10px 15px;
+        text-decoration: none;
+        cursor: pointer;
+        text-align: center;
+        width: 150px;
+    }
+
+    /* ------- NAVBAR END ------- */
+    /* -------- MAIN INI -------- */
+    main {
+        width: 100%;
+        margin: 0;
+    }
+
+    /* -------- MAIN END -------- */
+    /* ---- HERO SECTION INI ---- */
+
+    .hero-Section {
+        padding: 0 10%;
+        display: flex;
+    }
+
+    .hero-Container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hero-Content {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+        text-align: left;
+    }
+
+    h1 {
+        padding-top: 20%;
+    }
+
+    .hero-Content h1 {
+        text-align: left;
+        font-size: 300%;
+        margin: 0;
+        line-height: 110%;
+    }
+
+    p {
+        margin: 7% 0;
+    }
+
+    .content-Paragraph {
+        width: auto;
+        padding-right: 50px;
+        text-align: left;
+        font-size: 106%;
+        margin: 0;
+    }
+
+    .content-Button {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        align-self: flex-start;
+    }
+
+    .getInTouch-Button {
+        margin-right: 50px;
+        display: block;
+        transition: 0.5s;
+        font-size: 1em;
+        padding: 5% 15px;
+        margin-bottom: 0;
+    }
+
+    .hero-Images-Section {
+        display: flex;
+    }
+
+    .hero-Image {
+        width: 400px
+    }
+
+    .card1 {
+        display: block;
+        width: 27%;
+        height: auto;
+        position: absolute;
+        top: 28%;
+        right: 30%;
+    }
+
+    .card2 {
+        display: block;
+        width: 25%;
+        height: auto;
+        position: absolute;
+        top: 80%;
+        right: 4%;
+    }
+
+    /* --- CLIENT SECTION INI --- */
+
+
+
+    /* --- CLIENT SECTION END --- */
+
+
+
+
+
+
+}
+
+/* -- BREAK POINT 1024 END -- */
