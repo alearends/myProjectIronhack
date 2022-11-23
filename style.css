@@ -14,6 +14,15 @@ body {
 
 /* --- UTILITY CLASES INI ---- */
 
+.text-blue {
+    color: #072AC8;
+}
+
+.text-yellow {
+    color: #FFC600;
+}
+
+
 /* --- UTILITY CLASES END ---- */
 
 h1,
@@ -23,19 +32,19 @@ h3,
     color: #292E47;
 }
 
-#white-h2,
-.booking,
+.booking p,
 .getInTouch-Button,
 .contact-Us {
     color: #F4F6FC;
 }
 
-.watson {
+.watson p {
     color: #A2D6F9;
 }
 
 p,
-.seeOurWork-Button {
+.seeOurWork-Button,
+address {
     color: #6B708D;
 }
 
@@ -45,7 +54,7 @@ p,
 
 /* ---------------------------- */
 /* ------ FIRST MOBILE ------- */
-/* ------- NAVBAR INI ------- */
+/* ------- NAVBAR INI ------- MOBILE */
 
 header {
     display: flex;
@@ -77,8 +86,6 @@ header {
     color: #6B708D;
 }
 
-/* .menu */
-
 .nav-Menu li a:hover {
     color: #072AC8;
 }
@@ -87,15 +94,15 @@ header {
     display: none;
 }
 
-/* ------- NAVBAR END ------- */
-/* -------- MAIN INI -------- */
+/* ------- NAVBAR END -------MOBILE */
+/* -------- MAIN INI --------MOBILE */
 
 main {
     margin: 3%;
 }
 
-/* -------- MAIN END -------- */
-/* ---- HERO SECTION INI ---- */
+/* -------- MAIN END --------MOBILE */
+/* ---- HERO SECTION INI ----MOBILE */
 
 .hero-Section {
     padding: 0 4%;
@@ -118,17 +125,17 @@ main {
 
 .hero-Content h1 {
     text-align: center;
-    line-height: 130%;
+    line-height: 40px;
     margin: 5% 0 2% 0;
     font-weight: bold;
-    font-size: 180%;
+    font-size: 30px;
 }
 
 .content-Paragraph {
     font-weight: 400;
-    line-height: 160%;
+    line-height: 25px;
     margin-bottom: 5%;
-    /* font-size: ; */
+    font-size: 17px;
 }
 
 .content-Button {
@@ -148,7 +155,7 @@ main {
 
 .seeOurWork-Button {
     text-decoration: none;
-    font-size: 110%;
+    font-size: 18px;
     font-weight: 500;
 }
 
@@ -174,31 +181,354 @@ main {
     display: none;
 }
 
-/* ---- HERO SECTION END ---- */
-/* --- CLIENT SECTION INI --- */
+/* ---- HERO SECTION END ----MOBILE */
+/* --- CLIENT SECTION INI ---MOBILE */
 
-.client-Section{
+.client-Section {
     margin-top: 50px;
 }
 
+.client-Container {
 
-
-.client-Container{
-    filter: grayscale(1);
     display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.client-Container img{
+.client-Container img {
+    filter: grayscale(1);
     width: 90px;
-  height: auto;
-  margin: 5px;
+    height: auto;
+    margin: 5px;
+}
+
+.client-Container-1 {
+    display: flex;
+    gap: 2%;
+}
+
+#microsoft {
+    position: relative;
+    top: 8%;
+}
+
+.client-Container-2 {
+    display: flex;
+    gap: 10%;
+    justify-content: space-between;
+}
+
+#amazon {
+    position: relative;
+    top: 10px;
+}
+
+/* --- CLIENT SECTION END ---MOBILE */
+/* -- PROJECT SECTION iINI --MOBILE */
+
+.project-Section {
+    margin-top: 100px;
+}
+
+.project-Sheet {
+    padding-bottom: 10%;
+    background-color: white;
+    box-shadow: 0px 38.7755px 77.551px rgba(0, 0, 0, 0.1);
+    height: 400px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.project-Info {
+    margin: 0 5px 0 25px;
+}
+
+.project-info a {
+    text-decoration: none;
+}
+
+.project-Sheet {
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-Image {
+    width: 100%;
+    height: 240px;
+}
+
+.project-Short-Description {
+    width: 100%;
+    line-height: 20px;
+}
+
+.project-Short-Description p {
+    font-size: 15px;
+    width: 100%;
+    max-height: 40px;
+    text-align: justify;
+    overflow: hidden;
+    position: relative;
+}
+
+.project-Short-Description p:after {
+    content: '...';
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), white 0%);
+}
+
+
+.project-Info a {
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* -- PROJECT SECTION END --MOBILE */
+/* -TESTIMONIAL SECTION INI-MOBILE */
+.testimonial-Section {
+    margin-top: 40px;
+    position: relative;
+}
+
+.emo-dimension {
+    width: 60px;
+    height: auto;
+    display: block;
+    position: absolute;
+}
+
+.emoji1 {
+    left: 0%;
+    top: 0%;
+}
+
+.emoji3 {
+    left: 0%;
+    bottom: 0%;
+}
+
+.emoji2 {
+    right: 0%;
+    top: 0%;
+}
+
+.emoji4 {
+    right: 0%;
+    bottom: 0%;
+}
+
+.client {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.testimonial-Container {
+    padding: 50px 30px;
+    background-color: #292E47;
+    background-image: url("./project-assets/testimonial-section/orbit.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-Title {
+    font-size: 25px;
+    color: #F4F6FC;
+    line-height: 30px;
+
+}
+
+.opinion-Client {
+    font-size: 20px;
+    font-weight: 500;
+    max-width: 250px;
+    margin-bottom: 30px;
+    line-height: 160%;
+}
+
+.client-Info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+
+}
+
+.client-Info-Text {
+    flex-direction: column;
+    text-align: center;
+}
+
+.client-Info img {
+    margin-bottom: 5px;
+}
+
+.watson p,
+.booking p {
+    margin: 5px 0;
+}
+
+
+/* -TESTIMONIAL SECTION END-MOBILE */
+/* -- SERVICES SECTION iNI--MOBILE */
+.services-Section {
+    margin-top: 100px;
+}
+
+.icon-Serv-General {
+    background-position: 50% 50%;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: #ECF7FF;
+    margin-top: 15px;
+    margin-left: 15px;
+    padding-bottom: 0px;
+}
+
+.icon-Services1 {
+    background-image: url("./project-assets/services-section/icons/1.svg");
+}
+
+.icon-Services2 {
+    background-image: url("./project-assets/services-section/icons/2.svg");
+}
+
+.icon-Services3 {
+    background-image: url("./project-assets/services-section/icons/3.svg");
+}
+
+.service-Sheet {
+    padding-bottom: 10%;
+    background-color: white;
+    box-shadow: 0px 38.7755px 77.551px rgba(0, 0, 0, 0.1);
+    height: 270px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+/* -- SERVICES SECTION END--MOBILE */
+/* ---- CTA SECTION ini ----MOBILE */
+.cta-Section {
+    margin-top: 100px;
+}
+
+.cta-Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFC600;
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.form-Container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.enter-Email {
+    position: relative;
+}
+
+.envelop-Icon {
+    position: absolute;
+    top: 10%;
+    left: 4%;
+}
+
+#email {
+    line-height: 16px;
+    height: 30px;
+    padding: 12px 12px 12px 45px;
+    text-align: center;
+    font-size: 14px;
+    border: none;
+}
+
+#submit {
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #072AC8;
+    padding: 20px 45px;
+    font-weight: 500;
+    border: none;
+    font-size: 17px;
+}
+
+/* ---- CTA SECTION END ----MOBILE */
+/* -- FOOTER SECTION ini ---MOBILE */
+.footer-Section {
+    margin-top: 60px;
+    padding: 0 30px 30px 30px
+}
+
+.footer-Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-Article img {
+    margin-bottom: 15px;
+    width: 60px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.footer-Article address {
+    font-size: 17px;
+    line-height: 24px;
+    font-style: normal;
+}
+
+.footer-Links {
+    font-size: 10px;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.footer-Links a {
+    text-decoration: none;
+    color: #5e6068;
+}
+
+.footer-Links a:hover {
+    text-decoration: none;
+    color: #072AC8;
 }
 
 
 
-/* --- CLIENT SECTION END --- */
+/* -- FOOTER SECTION END ---MOBILE */
 
 /* ------------------------------ */
 /* ------ FIRST MOBILE END ----- */
@@ -208,60 +538,71 @@ main {
 /* -- BREAK POINT 1024 INI --- */
 @media (min-width: 1024px) {
 
-    /* ------- NAVBAR INI ------- */
+    /* ------- NAVBAR INI -------@1024 */
 
     header {
-        padding: 5% 10% 0 10%
+        padding: 70px 170px 0 170px;
     }
 
-    #nav-bar {
-        position: static;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        background-color: #F2F4FC;
-        top: 0;
-        width: 100%;
-        margin: auto;
-        transition: 0s;
-        height: auto;
-        /* -------- */
-        margin-left: 30px;
+    .logo-Circle img {
+        width: 110%;
     }
 
     .nav-Menu {
         display: flex;
-        gap: 20%;
+        gap: 40%;
+        font-size: 17px;
+        justify-content: center;
+        font-weight: 500;
     }
 
-    .menu {
-        margin: auto;
+    #home {
+        color: #072AC8;
+        font-weight: 600;
+    }
+
+    #home:hover{
+        color: #6B708D;
     }
 
     .contact-Us {
         display: block;
         transition: 0, 5s;
         background-color: #072AC8;
-        /* font-size: ; */
-        padding: 10px 15px;
+        font-size: 17px;
+        padding: 15px 3px;
         text-decoration: none;
         cursor: pointer;
         text-align: center;
         width: 150px;
     }
 
-    /* ------- NAVBAR END ------- */
-    /* -------- MAIN INI -------- */
+    .logo-Circle img:hover {
+        animation: rotation 1s infinite linear
+    }
+
+    @keyframes rotation {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(359deg);
+        }
+    }
+
+    /* ------- NAVBAR END -------@1024 */
+    /* -------- MAIN INI --------@1024 */
     main {
         width: 100%;
         margin: 0;
     }
 
-    /* -------- MAIN END -------- */
-    /* ---- HERO SECTION INI ---- */
+    /* -------- MAIN END --------@1024 */
+    /* ---- HERO SECTION INI ----@1024 */
 
     .hero-Section {
-        padding: 0 10%;
+        padding: 100px 170px 0 170px;
         display: flex;
     }
 
@@ -276,19 +617,19 @@ main {
         display: flex;
         flex-direction: column;
         justify-content: left;
-        align-items: left;
+        align-items: flex-start;
         text-align: left;
-    }
-
-    h1 {
-        padding-top: 20%;
+        width: 100%;
+        height: auto;
     }
 
     .hero-Content h1 {
         text-align: left;
-        font-size: 300%;
+        line-height: 70px;
         margin: 0;
-        line-height: 110%;
+        font-size: 60px;
+        max-width: 530px;
+        font-weight: 700;
     }
 
     p {
@@ -296,11 +637,14 @@ main {
     }
 
     .content-Paragraph {
+        display: flex;
         width: auto;
-        padding-right: 50px;
+        max-width: 435px;
         text-align: left;
-        font-size: 106%;
+        font-size: 20px;
+        line-height: 30px;
         margin: 0;
+        font-weight: 400;
     }
 
     .content-Button {
@@ -309,53 +653,342 @@ main {
         justify-content: left;
         align-items: center;
         align-self: flex-start;
+        gap: 10px;
     }
 
     .getInTouch-Button {
         margin-right: 50px;
         display: block;
         transition: 0.5s;
-        font-size: 1em;
-        padding: 5% 15px;
+        font-size: 17px;
+        line-height: 22px;
+        padding: 15px 37px;
         margin-bottom: 0;
+        font-weight: 500;
+    }
+
+    .getInTouch-Button:hover {
+        background-color: #F2F4FC;
+        color: #6B708D;
+    }
+
+    .seeOurWork-Button {
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 22px;
+        padding: 15px 30px;
+        cursor: pointer;
+        border: #F4F6FC solid thin
+    }
+
+    .seeOurWork-Button:hover {
+        display: block;
+        transition: 0.5s ease;
+        padding: 15px 30px;
+        border: #072AC8 solid thin;
     }
 
     .hero-Images-Section {
+        position: relative;
         display: flex;
+        width: 100%;
     }
 
     .hero-Image {
-        width: 400px
+        width: 100%
     }
 
     .card1 {
         display: block;
-        width: 27%;
+        width: 65%;
         height: auto;
         position: absolute;
-        top: 28%;
-        right: 30%;
+        top: 11%;
+        right: 52%;
     }
 
     .card2 {
         display: block;
-        width: 25%;
-        height: auto;
+        width: 65%;
+        height: 47%;
         position: absolute;
-        top: 80%;
-        right: 4%;
+        top: 70%;
+        right: -17%;
     }
 
-    /* --- CLIENT SECTION INI --- */
+    /* ---- HERO SECTION END ----@1024 */
+    /* --- CLIENT SECTION INI ---@1024 */
+    .client-Section {
+        display: flex;
+        margin-top: 150px;
+        padding: 0 170px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+
+    .client-Container {
+        display: flex;
+        justify-content: space-around;
+        gap: 30px;
+    }
+
+    .client-Container-1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .client-Container-2 {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .client-Container img {
+        width: 150px;
+        height: 96px;
+        margin: 0 30px 0 30px;
+    }
+
+    .client-Container img:hover {
+        filter: grayscale(0);
+        filter: none;
+    }
+
+
+    /* --- CLIENT SECTION END ---@1024 */
+    /* -- PROJECT SECTION iINI --@1024 */
+
+    .project-Section {
+        margin-top: 200px;
+        padding: 0 170px;
+    }
+
+    .project-Section h2 {
+        color: #292E47;
+        text-align: left;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 47px;
+    }
+
+    .project-Container {
+        display: grid;
+        grid-auto-flow: row;
+        gap: 20px;
+        grid-template-columns: 31% 31% 31%;
+        justify-content: space-between;
+        justify-items: start;
+    }
+
+    .project-Name {
+        margin-bottom: 0;
+    }
+
+    .project-Short-Description p {
+        font-size: 17px;
+        font-weight: 400;
+        max-height: 40px;
+        text-align: justify;
+        overflow: hidden;
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .project-Short-Description p:after {
+        content: '...';
+        background: linear-gradient(to right, rgba(0, 0, 0, 0), white 0%);
+    }
+
+    .project-Info h3 {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28px;
+    }
+
+    .project-Info {
+        display: flex;
+        padding-left: 5px;
+        padding-right: 10px;
+        height: 200px;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .project-Sheet {
+        background-color: white;
+        box-shadow: 0px 38.7755px 77.551px rgba(0, 0, 0, 0.1);
+        height: 450px;
+    }
+
+    article img {
+        width: 100%;
+        height: 240px;
+    }
+
+    #proy-img3 {
+        object-fit: cover;
+    }
+
+    .learn-More {
+        font-size: 17px;
+        padding-top: 10px;
+    }
+
+    /* -- PROJECT SECTION END --@1024 */
+    /* -TESTIMONIAL SECTION iNI-@1024 */
+    .testimonial-Section {
+        margin-top: 100px;
+        padding: 0 60px;
+        position: relative
+    }
+
+    .testimonial-Container {
+        padding: 140px 30px;
+    }
+
+    .emo-dimension {
+        width: 150px;
+    }
+
+    .emoji1 {
+        left: 10%;
+        top: 10%;
+    }
+
+    .emoji3 {
+        left: 10%;
+        bottom: 10%;
+    }
+
+    .emoji2 {
+        right: 10%;
+        top: 10%;
+    }
+
+    .emoji4 {
+        right: 10%;
+        bottom: 10%;
+    }
+
+    /* -TESTIMONIAL SECTION END-@1024  */
+    /* -- SERVICES SECTION iNI --@1024 */
+    .services-Section {
+        margin-top: 200px;
+        padding: 0 170px;
+    }
+
+    .service-Sheet {
+        height: 325px;
+    }
+
+    /* -- SERVICES SECTION END --@1024 */
+    /* ----- CTA SECTION ini ----@1024 */
+    .cta-Section {
+        margin-top: 200px;
+        padding: 0 60px;
+    }
+
+    .cta-Container h2 {
+        font-size: 40px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #gray-p {
+        font-size: 20px;
+        margin: 0 auto;
+
+    }
+
+    .enter-Email {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    #email {
+        height: 35px;
+        border: #FFC60C solid thin;
+    }
+
+    #submit {
+        margin-top: 0;
+        margin-left: 20px;
+        display: block;
+        transition: 0.5s;
+        border: #FFC60C solid thin;
+    }
+
+    #submit:hover {
+        background-color: #FFC60C;
+        color: #292E47;
+        font-weight: 500;
+        border: #072AC8 solid thin;
+    }
+
+    .envelop-Icon {
+        position: absolute;
+        top: 22%;
+        left: 4%;
+    }
+
+    /* ----- CTA SECTION END ----@1024 */
+    /* --- FOOTER SECTION ini ---@1024 */
+    .footer-Section {
+        margin-top: 150px;
+        padding: 0 200px 100px 200px;
+    }
+
+    .footer-Container {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        padding: 0 10px;
+    }
+
+    .footer-Article {
+        width: 40%;
+    }
+
+    .footer-Article img{
+        width: 100px;
+        height: 30px;
+    }
+
+    .footer-Article img:hover {
+        animation: rotation 1s infinite linear
+    }
+
+    @keyframes rotation {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(359deg);
+        }
+    }
 
 
 
-    /* --- CLIENT SECTION END --- */
+    .footer-Links {
+        margin-top: 0px;
+        align-self: flex-end;
+        row-gap: 50px;
+        font-size: 17px;
+    }
 
 
 
 
-
+    /* --- FOOTER SECTION END ---@1024 */
 
 }
 

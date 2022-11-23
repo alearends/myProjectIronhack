@@ -15,10 +15,12 @@
         <div class="logo-Circle">
             <img src="./project-assets/logos/circle.svg" alt="Logo Circle">
         </div>
-        <nav id="nav-bar">
+        <nav>
+            <!-- <input type="checkbox" id="burguer">
+            <label for="burguer"> ☰ </label> -->
             <ul class="nav-Menu">
-                <li class="menu">
-                    <a href="/">Home</a>
+                <li class="menu" >
+                    <a id="home" href="/">Home</a>
                 </li>
                 <li class="menu">
                     <a href="/project.html">Project</a>
@@ -63,20 +65,24 @@
         <!-- CLIENT SECTION ini -->
         <section class="client-Section">
             <div class="client-Container">
-                <div>
-                    <img src="./project-assets/logos/airbnb-logo.svg" alt="airbnb logo" />
+                <div class="client-Container-1">
+                    <div>
+                        <img src="./project-assets/logos/airbnb-logo.svg" alt="airbnb logo" />
+                    </div>
+                    <div>
+                        <img src="./project-assets/logos/google-logo.svg" alt="google logo" />
+                    </div>
+                    <div>
+                        <img src="./project-assets/logos/microsoft-logo.svg" id="microsoft" alt="microsoft logo" />
+                    </div>
                 </div>
-                <div>
-                    <img src="./project-assets/logos/google-logo.svg" alt="google logo" />
-                </div>
-                <div>
-                    <img src="./project-assets/logos/microsoft-logo.svg" alt="microsoft logo" />
-                </div>
-                <div>
-                    <img src="./project-assets/logos/fedex-logo.svg" alt="fedex logo" />
-                </div>
-                <div>
-                    <img src="./project-assets/logos/amazon-logo.svg" id="amazon" alt="amazon logo" />
+                <div class="client-Container-2">
+                    <div>
+                        <img src="./project-assets/logos/fedex-logo.svg" alt="fedex logo" />
+                    </div>
+                    <div>
+                        <img src="./project-assets/logos/amazon-logo.svg" id="amazon" alt="amazon logo" />
+                    </div>
                 </div>
             </div>
         </section>
@@ -89,32 +95,35 @@
         <section class="project-Section">
             <h2>Recent Projects</h2>
             <div class="project-Container">
-                <article id="project1" class="project-Sheet">
-                    <img src="" alt="" class="project-Image">
+                <article class="project-Sheet">
+                    <img src="./project-assets/projects-section/1.jpg" alt="" class="project-Image">
                     <div class="project-Info">
                         <h3 class="project-Name">Title Article 1 (Simplify)</h3>
                         <div class="project-Short-Description">
-                            <p>Keywords Article 1 (UI Design & App Development)</p>
+                            <p>UI Design & App Development. This is a brief description of this
+                                article, that shouldn't be longer 2 lines. </p>
                         </div>
                         <a class="learn-More" href="/project.html">Learn More </a>
                     </div>
                 </article>
-                <article id="project2" class="project-sheet">
-                    <img src="" alt="" class="project-Image">
+                <article id="article1" class="project-Sheet">
+                    <img src="./project-assets/projects-section/2.jpg" alt="" class="project-Image">
                     <div class="project-Info">
                         <h3 class="project-Name">Title Article 2 (Dashcoin)</h3>
-                        <div class="project-Short-Description">
-                            <p>Keywords Article 1 (Web Development)</p>
+                        <div class="project-Short-Description ">
+                            <p>Keywords Article 1 (Web Development). This is a brief description of this
+                                article, that shouldn't be longer 2 lines.</p>
                         </div>
                         <a class="learnMore" href="/project.html">Learn More </a>
                     </div>
                 </article>
-                <article id="project3" class="project-sheet">
-                    <img src="" alt="" class="project-Image">
+                <article class="project-Sheet">
+                    <img id="proy-img3" src="./project-assets/projects-section/3.jpg" alt="" class="project-Image">
                     <div class="project-Info">
                         <h3 class="project-Name">Title Article 2 (Vectorify)</h3>
                         <div class="project-Short-Description">
-                            <p>Keywords Article 1 (User Experience Design)</p>
+                            <p>Keywords Article 1 (User Experience Design). This is a brief description of this
+                                article, that shouldn't be longer 2 lines.</p>
                         </div>
                         <a class="learnMore" href="/project.html">Learn More </a>
                     </div>
@@ -126,15 +135,16 @@
         <!-- TESTIMONIAL SECTION ini -->
         <section class="testimonial-Section">
             <article class="testimonial-Container">
-                <img src="./project-assets/testimonial-section/memoji-1.png" alt="emoji Crossed Fingers" class="emoji">
-                <img src="./project-assets/testimonial-section/memoji-2.png" alt="emoji Winking Face" class="emoji">
-                <img src="./project-assets/testimonial-section/memoji-3.png" alt="emoji Thumbs Up" class="emoji">
-                <img src="./project-assets/testimonial-section/memoji-4.png" alt="emoji party" class="emoji">
-                <h2 id="white-H2" class="testimonial-Title">
+                <img src="./project-assets/testimonial-section/memoji-1.png" alt="emoji Crossed Fingers" class="emoji1 emo-dimension">
+                <img src="./project-assets/testimonial-section/memoji-2.png" alt="emoji Winking Face" class="emoji2 emo-dimension">
+                <img src="./project-assets/testimonial-section/memoji-3.png" alt="emoji Thumbs Up" class="emoji3 emo-dimension">
+                <img src="./project-assets/testimonial-section/memoji-4.png" alt="emoji party" class="emoji4 emo-dimension">
+                <h2 class="testimonial-Title">
                     Hear What Our Clients Have to Say
                 </h2>
                 <div class="opinion-Client">
-                    <p id="orange-p" >“Circle helped us through every stage of our startup. We really enjoyed working with you.”
+                    <p id="orange-p">“Circle helped us through every stage of our startup. We really enjoyed working
+                        with you.”
                     </p>
                 </div>
                 <div class="client-Info">
@@ -156,37 +166,37 @@
         <!-- SERVICES SECTION ini -->
         <section class="services-Section">
             <h2>Our Services</h2>
-            <div class="services-Container">
-                <article id="service1" class="services-Sheet">
-                    <div class="icon-Services1"></div>
-                    <div class="services-Info">
-                        <h3 class="services-Name">User interface Design</h3>
+            <div class="project-Container">
+                <article class="service-Sheet">
+                    <div class="icon-Services1 icon-Serv-General"></div>
+                    <div class="project-Info">
+                        <h3 class="project-Name">User interface Design</h3>
                         <div class="services-Description">
                             <p>Circle provides you with a stunning user interface design that is accessible to
                                 everyone.</p>
                         </div>
-                        <a class="learnMore" href="/contactUs.html">Learn More </a>
+                        <a class="learn-More" href="/contactUs.html">Learn More </a>
                     </div>
                 </article>
-                <article id="service2" class="services-Sheet">
-                    <div class="icon-Services2"></div>
-                    <div class="services-Info">
-                        <h3 class="services-Name">User Experience Design</h3>
+                <article class="service-Sheet">
+                    <div class="icon-Services2 icon-Serv-General"></div>
+                    <div class="project-Info">
+                        <h3 class="project-Name">User Experience Design</h3>
                         <div class="services-Description">
                             <p>Circle always focuses on delivering the best user experience to your customers.</p>
                         </div>
-                        <a class="learnMore" href="/contactUs.html">Learn More </a>
+                        <a class="learn-More" href="/contactUs.html">Learn More </a>
                     </div>
                 </article>
-                <article id="service3" class="services-Sheet">
-                    <div class="icon-Services3"></div>
-                    <div class="services-Info">
-                        <h3 class="services-Name">Application Development</h3>
+                <article class="service-Sheet">
+                    <div class="icon-Services3 icon-Serv-General"></div>
+                    <div class="project-Info">
+                        <h3 class="project-Name">Application Development</h3>
                         <div class="services-Description">
                             <p>We develop high-quality mobile and web applications using the latest technology
                                 stack.</p>
                         </div>
-                        <a class="learnMore" href="/contactUs.html">Learn More </a>
+                        <a class="learn-More" href="/contactUs.html">Learn More </a>
                     </div>
                 </article>
             </div>
@@ -201,7 +211,7 @@
         <section class="cta-Section">
             <div class="cta-Container">
                 <h2 class="title-Container">Do you have any questions?</h2>
-                <p id="gray-p" >Let us help you</p>
+                <p id="gray-p">Let us help you</p>
                 <div class="form-Container">
                     <form action="" class="content">
                         <div class="enter-Email">
@@ -221,7 +231,7 @@
 
         <!-- FOOTER SECTION ini-->
         <footer class="footer-Section">
-            <div class="footer-Container">
+            <section class="footer-Container">
                 <article class="footer-Article">
                     <img src="./project-assets/logos/circle.svg" alt="Logo Circle">
                     <address>2972 Westheimer Rd. <br> Santa Ana, Illinois 85486</address>
@@ -234,7 +244,7 @@
                     <a href="#">Project</a>
                     <a href="#">Privacy Policy</a>
                 </article>
-            </div>
+            </section>
         </footer>
     </main>
     <!-- FOOTER SECTION end-->
