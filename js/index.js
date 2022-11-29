@@ -3,7 +3,7 @@ url = "https://picsum.photos/v2/list";
 
 const projectSection = document.querySelector("#project-Container");
 
-async function getPhotosAndAuthor() {
+async function getProjectSection() {
   const response = await fetch(url);
   const photos = await response.json();
   photos.forEach((ph, i) => {
@@ -42,50 +42,50 @@ async function getPhotosAndAuthor() {
   });
 }
 
-getPhotosAndAuthor();
+getProjectSection();
 
-async function getDescription() {
-  const response = await fetch(url);
-  const photos = await response.json();
-  photos.forEach((ph, i) => {
-    if (i < 3) {
-      // Código para crear la tajeta
-      const article = document.createElement("article");
-      article.className = "project-Sheet";
+// async function getDescription() {
+//   const response = await fetch(url);
+//   const photos = await response.json();
+//   photos.forEach((ph, i) => {
+//     if (i < 3) {
+//       // Código para crear la tajeta
+//       const article = document.createElement("article");
+//       article.className = "project-Sheet";
 
-      const img = document.createElement("img");
-      article.className = "project-Image";
-      img.src = ph.download_url;
-      // img.src = "./project-assets/projects-section/1.jpg"
+//       const img = document.createElement("img");
+//       article.className = "project-Image";
+//       img.src = ph.download_url;
+//       // img.src = "./project-assets/projects-section/1.jpg"
 
-      const div = document.createElement("div");
-      div.className = "project-Info";
+//       const div = document.createElement("div");
+//       div.className = "project-Info";
 
-      const titulo = document.createElement("h3");
-      titulo.className = "project-Name";
-      titulo.textContent = ph.author;
-      // titulo.textContent = "Title Article 1"
+//       const titulo = document.createElement("h3");
+//       titulo.className = "project-Name";
+//       titulo.textContent = ph.author;
+//       // titulo.textContent = "Title Article 1"
 
-      const description = document.createElement("p");
-      description.className = "project-Short-Description";
-      description.textContent =
-        "UI Design & App Development. This is a brief description of this article, that shouldn't be longer 2 lines.";
+//       const description = document.createElement("p");
+//       description.className = "project-Short-Description";
+//       description.textContent =
+//         "UI Design & App Development. This is a brief description of this article, that shouldn't be longer 2 lines.";
 
-      const learnMore = document.createElement("a");
-      learnMore.className = "learn-More";
-      learnMore.textContent = "Learn More";
-      learnMore.setAttribute("href", "/project.html");
+//       const learnMore = document.createElement("a");
+//       learnMore.className = "learn-More";
+//       learnMore.textContent = "Learn More";
+//       learnMore.setAttribute("href", "/project.html");
       
 
-      article.append(img, div);
-      div.append(titulo, description, learnMore);
+//       article.append(img, div);
+//       div.append(titulo, description, learnMore);
 
-      projectSection.append(article);
-    }
-  });
-}
+//       projectSection.append(article);
+//     }
+//   });
+// }
 
-getPhotosAndAuthor();
+// getPhotosAndAuthor();
 
 
 
