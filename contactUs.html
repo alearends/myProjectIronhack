@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>myProject</title>
+</head>
+
+<body>
+    <!-- NAVBAR ini -->
+    <header>
+        <div class="logo-Circle">
+            <img src="./project-assets/logos/circle.svg" alt="Logo Circle">
+        </div>
+        <nav class="dropdown">
+            <button class="dropbtn">
+                <label for="burguer"> ☰ </label>
+            </button>
+            <!-- <input type="checkbox" id="burguer"> -->
+            <ul class="nav-Menu">
+                <li class="menu">
+                    <a id="home" href="/">Home</a>
+                </li>
+                <li class="menu">
+                    <a href="/project.html">Project</a>
+                </li>
+                <li class="menu">
+                    <a href="/index.html#ourServices">Services</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- <a href="/contactUs.html" class="contact-Us">Contact Us</a> -->
+    </header>
+    <!-- NAVBAR END -->
+    <!-- FORM iNI-->
+    <main>
+        <section class="contactUs-Section2">
+            <h2>Contact Us</h2>
+            <div class="contactUs-Container2">
+                <form name="post_info-form" class="contact-Form2">
+                    <div class="flex-direction-column name">
+                        <label for="userName" id="userNameLabel" class="contact-Title">Full Name *</label>
+                        <input id="userName"  type="text" class="contact-Text-Field" maxlength="150" name="name" data-name="Name"
+                            placeholder="Enter your full name" required />
+                    </div>
+                    <div class="flex-direction-column email">
+                        <label for="userEmail" id="userEmailLabel" class="contact-Title">Email</label>
+                        <input id="userEmail" type="email" class="contact-Text-Field" maxlength="250" name="email" 
+                            placeholder="Enter your email" required />
+                    </div>
+                    <div class="flex-direction-column phone">
+                        <label for="userPhone" id="userPhoneLabel" class="contact-Title">Phone</label>
+                        <input id="userPhone" type="tel" class="contact-Text-Field"
+                            maxlength="256" name="phone" data-name="Name3" placeholder="Enter your phone" required/>
+                    </div>
+                    <div class="flex-direction-column message">
+                        <label for="userMessage" id="userMessageLabel" class="contact-Title">Message</label>
+                        <textarea id="userMessage" placeholder="Write your message here..." maxlength="50" name="field" required
+                            data-name="field" class="contact-Text-Field textArea-Field">
+                        </textarea>
+                    </div>
+
+                    <button id="submitBtn"  value="" data-wait="Please wait..." class="button-Form">
+                        Submit
+                    </button>
+                    <h3 id="text-To-User"></h3>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- FORM END-->
+    <!-- FOOTER SECTION iNI-->
+    <footer class="footer-Section">
+        <section class="footer-Container">
+            <article class="footer-Article">
+                <img src="./project-assets/logos/circle.svg" alt="Logo Circle">
+                <address>2972 Westheimer Rd. <br> Santa Ana, Illinois 85486</address>
+            </article>
+            <article class="footer-Links">
+                <a href="#">Team</a>
+                <a href="#">Services</a>
+                <a href="#">About Us</a>
+                <a href="#">Press</a>
+                <a href="#">Project</a>
+                <a href="#">Privacy Policy</a>
+            </article>
+        </section>
+    </footer>
+    <script src="./js/contactUs.js"></script>
+    <!-- FOOTER SECTION END-->
+</body>
+
+</html>

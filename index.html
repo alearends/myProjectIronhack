@@ -15,18 +15,20 @@
         <div class="logo-Circle">
             <img src="./project-assets/logos/circle.svg" alt="Logo Circle">
         </div>
-        <nav>
-            <!-- <input type="checkbox" id="burguer">
-            <label for="burguer"> ☰ </label> -->
+        <nav class="dropdown">
+            <button class="dropbtn">
+                <label for="burguer"> ☰ </label>
+            </button>
+            <!-- <input type="checkbox" id="burguer"> -->
             <ul class="nav-Menu">
-                <li class="menu" >
+                <li class="menu">
                     <a id="home" href="/">Home</a>
                 </li>
                 <li class="menu">
                     <a href="/project.html">Project</a>
                 </li>
                 <li class="menu">
-                    <a href="#ourServices">Services</a>
+                    <a href="/#ourServices">Services</a>
                 </li>
             </ul>
         </nav>
@@ -89,45 +91,54 @@
         <!-- CLIENT SECTION end -->
 
         <!-- PROJECT SECTION ini -->
-
-        <!-- Cómo se hace lo del API?? -->
-
         <section class="project-Section">
             <h2>Recent Projects</h2>
-            <div class="project-Container">
-                <article class="project-Sheet">
+            <!-- <article class="project-Sheet">
+                <img src="./project-assets/projects-section/1.jpg" alt="" class="project-Image">
+                <div class="project-Info">
+                    <h3 class="project-Name">Title Article 1 (Simplify)</h3>
+                    <p class="project-Short-Description">
+                        UI Design & App Development. This is a brief description of this
+                        article, that shouldn't be longer 2 lines.
+                    </p>
+                    <a class="learn-More" href="/project.html">Learn More </a>
+                </div>
+            </article> -->
+            <div class="project-Container" id="project-Container">
+                <!-- <article class="project-Sheet">
                     <img src="./project-assets/projects-section/1.jpg" alt="" class="project-Image">
                     <div class="project-Info">
                         <h3 class="project-Name">Title Article 1 (Simplify)</h3>
-                        <div class="project-Short-Description">
-                            <p>UI Design & App Development. This is a brief description of this
-                                article, that shouldn't be longer 2 lines. </p>
-                        </div>
+                        <p class="project-Short-Description">
+                            UI Design & App Development. This is a brief description of this
+                            article, that shouldn't be longer 2 lines.
+                        </p>
                         <a class="learn-More" href="/project.html">Learn More </a>
                     </div>
                 </article>
-                <article id="article1" class="project-Sheet">
+                <article class="project-Sheet">
                     <img src="./project-assets/projects-section/2.jpg" alt="" class="project-Image">
                     <div class="project-Info">
                         <h3 class="project-Name">Title Article 2 (Dashcoin)</h3>
-                        <div class="project-Short-Description ">
-                            <p>Keywords Article 1 (Web Development). This is a brief description of this
-                                article, that shouldn't be longer 2 lines.</p>
-                        </div>
-                        <a class="learnMore" href="/project.html">Learn More </a>
+                        <p class="project-Short-Description">Keywords Article 1 (Web Development). This is a brief
+                            description of this
+                            article, that shouldn't be longer 2 lines.
+                        </p>
+                        <a class="learn-More" href="/project.html">Learn More </a>
                     </div>
                 </article>
                 <article class="project-Sheet">
                     <img id="proy-img3" src="./project-assets/projects-section/3.jpg" alt="" class="project-Image">
                     <div class="project-Info">
-                        <h3 class="project-Name">Title Article 2 (Vectorify)</h3>
-                        <div class="project-Short-Description">
-                            <p>Keywords Article 1 (User Experience Design). This is a brief description of this
-                                article, that shouldn't be longer 2 lines.</p>
-                        </div>
-                        <a class="learnMore" href="/project.html">Learn More </a>
+                        <h3 class="project-Name">Title Article 3 (Vectorify)</h3>
+                        <p class="project-Short-Description">
+                            Keywords Article 1 (User Experience Design). This is a
+                            brief description of this
+                            article, that shouldn't be longer 2 lines.
+                        </p>
+                        <a class="learn-More" href="/project.html">Learn More </a>
                     </div>
-                </article>
+                </article> -->
             </div>
         </section>
         <!-- PROJECT SECTION end -->
@@ -135,10 +146,14 @@
         <!-- TESTIMONIAL SECTION ini -->
         <section class="testimonial-Section">
             <article class="testimonial-Container">
-                <img src="./project-assets/testimonial-section/memoji-1.png" alt="emoji Crossed Fingers" class="emoji1 emo-dimension">
-                <img src="./project-assets/testimonial-section/memoji-2.png" alt="emoji Winking Face" class="emoji2 emo-dimension">
-                <img src="./project-assets/testimonial-section/memoji-3.png" alt="emoji Thumbs Up" class="emoji3 emo-dimension">
-                <img src="./project-assets/testimonial-section/memoji-4.png" alt="emoji party" class="emoji4 emo-dimension">
+                <img src="./project-assets/testimonial-section/memoji-1.png" alt="emoji Crossed Fingers"
+                    class="emoji1 emo-dimension">
+                <img src="./project-assets/testimonial-section/memoji-2.png" alt="emoji Winking Face"
+                    class="emoji2 emo-dimension">
+                <img src="./project-assets/testimonial-section/memoji-3.png" alt="emoji Thumbs Up"
+                    class="emoji3 emo-dimension">
+                <img src="./project-assets/testimonial-section/memoji-4.png" alt="emoji party"
+                    class="emoji4 emo-dimension">
                 <h2 class="testimonial-Title">
                     Hear What Our Clients Have to Say
                 </h2>
@@ -160,7 +175,9 @@
                     </div>
                 </div>
             </article>
+            <div id="ourServices"></div>
         </section>
+        
         <!-- TESTIMONIAL SECTION end  -->
 
         <!-- SERVICES SECTION ini -->

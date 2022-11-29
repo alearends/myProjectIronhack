@@ -60,7 +60,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5% 7%;
+    padding: 5% 7% 0 7%;
 }
 
 .logo-Circle img {
@@ -69,32 +69,140 @@ header {
     cursor: pointer;
 }
 
-.nav-Menu {
+/* .nav-Menu {
     display: flex;
     font-size: 100%;
     justify-content: right;
-}
+} */
 
-.nav-Menu li {
+/* .nav-Menu li {
     list-style: none;
     display: inline-block;
     padding: 5%;
-}
+} */
 
-.nav-Menu li a {
+/* .nav-Menu li a {
     text-decoration: none;
     color: #6B708D;
-}
+} */
 
-.nav-Menu li a:hover {
+/* .nav-Menu li a:hover {
     color: #072AC8;
-}
+} */
 
 .contact-Us {
     display: none;
 }
 
 /* ------- NAVBAR END -------MOBILE */
+/* ------- BURGUER iNI ------MOBILE */
+.dropbtn {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.nav-Menu {
+    display: none;
+    position: absolute;
+    top: 32px;
+    right: 0;
+    background-color: #F2F4FC;
+    max-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    list-style: none;
+    text-align: right;
+    border-radius: 10%;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-Menu li {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-Menu li a {
+    color: #6B708D;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+
+}
+
+.nav-Menu li a:hover {
+    background-color: #FFC600;
+    text-decoration: none;
+    width: 60%;
+    border-radius: 10%;
+    color: #292E47;
+}
+
+@media (max-width:1023px) {
+    .dropdown:hover .nav-Menu {
+        display: inline-block;
+    }
+}
+
+/* input:checked~ul {
+    display: block;
+    top: 0;
+    right: 0;
+} */
+
+/* input {
+    display: none;
+} */
+
+.dropbtn label {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 230%;
+    height: auto;
+    /* width: 30px;
+    height: 30px; */
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    transition: 0.3s;
+}
+
+.dropbtn label:hover {
+    background: #072AC8;
+    color: white;
+}
+
+/* input:checked ~ label {
+    background: #072AC8;
+    color: white;
+    top: 0;
+    right: 0; 
+  } */
+
+/* li {
+    display: block;
+    background: lightgrey;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid grey;
+  } */
+
+/* li:hover {
+    filter: brightness(110%);
+  } */
+
+/* ------- BURGUER END ------MOBILE */
 /* -------- MAIN INI --------MOBILE */
 
 main {
@@ -106,6 +214,7 @@ main {
 
 .hero-Section {
     padding: 0 4%;
+    margin: 0;
 }
 
 .hero-Container {
@@ -128,7 +237,8 @@ main {
     line-height: 40px;
     margin: 5% 0 2% 0;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 200%;
+    /* font-size: 30px; */
 }
 
 .content-Paragraph {
@@ -185,7 +295,7 @@ main {
 /* --- CLIENT SECTION INI ---MOBILE */
 
 .client-Section {
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 .client-Container {
@@ -193,6 +303,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: 0 auto;
 }
 
 .client-Container img {
@@ -227,30 +338,31 @@ main {
 /* -- PROJECT SECTION iINI --MOBILE */
 
 .project-Section {
-    margin-top: 100px;
+    margin-top: 60px;
+}
+
+.project-Section h2 {
+    margin: 10px auto;
 }
 
 .project-Sheet {
-    padding-bottom: 10%;
+    /* padding-bottom: 10%; */
     background-color: white;
     box-shadow: 0px 38.7755px 77.551px rgba(0, 0, 0, 0.1);
-    height: 400px;
+    height: 420px;
     padding: 5px;
     margin-bottom: 20px;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-Info {
     margin: 0 5px 0 25px;
 }
 
-.project-info a {
+.learn-More {
     text-decoration: none;
-}
-
-.project-Sheet {
-    justify-content: flex-start;
-    display: flex;
-    flex-direction: column;
 }
 
 .project-Image {
@@ -261,9 +373,6 @@ main {
 .project-Short-Description {
     width: 100%;
     line-height: 20px;
-}
-
-.project-Short-Description p {
     font-size: 15px;
     width: 100%;
     max-height: 40px;
@@ -272,7 +381,7 @@ main {
     position: relative;
 }
 
-.project-Short-Description p:after {
+.project-Short-Description::after {
     content: '...';
     bottom: 0;
     right: 0;
@@ -280,11 +389,13 @@ main {
     background: linear-gradient(to right, rgba(0, 0, 0, 0), white 0%);
 }
 
-
-.project-Info a {
+.learn-More {
     text-decoration: none;
     font-size: 17px;
+    color: #072AC8;
 }
+
+
 
 /* -- PROJECT SECTION END --MOBILE */
 /* -TESTIMONIAL SECTION INI-MOBILE */
@@ -529,31 +640,226 @@ main {
 
 
 /* -- FOOTER SECTION END ---MOBILE */
+/* ------------------------------- */
+/* -- contactUs.HTML iNI ---MOBILE */
+
+.contactUs-Container2 {
+    width: 100%;
+}
+
+.contactUs-Section2 {
+    padding: 0 30px;
+    margin: 80px 0 100px;
+}
+
+.contactUs-Section2 h2 {
+    font-size: 1.5em;
+    margin: 50px 0 40px;
+    color: #072AC8;
+    font-weight: 700;
+}
+
+.contact-Form2 {
+    display: grid;
+    max-width: 100%;
+    gap: 30px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "name  "
+        "email "
+        "phone"
+        "message "
+        "btn ";
+}
+
+.name {
+    grid-area: name;
+}
+
+.email {
+    grid-area: email;
+}
+
+.phone {
+    grid-area: phone;
+}
+
+.message {
+    grid-area: message;
+}
+
+.flex-direction-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.input:valid {
+    color: #072AC8;
+}
+
+.contact-Title {
+    color: #6b708d;
+    font-size: 1.25em;
+    font-weight: 500;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.contact-Text-Field {
+    width: 100%;
+    height: 70px;
+    padding-left: 20px;
+    border: none;
+    background-color: rgba(107, 112, 141, 0.1);
+}
+
+.contact-Text-Field:focus {
+    outline: none;
+    border: 1px solid #f2f4fc;
+    box-shadow: 0 0 5px #6b708d;
+}
+
+.textArea-Field {
+    height: 200px;
+    resize: none;
+    padding-top: 20px;
+}
+
+.textArea-Field::placeholder {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    /* padding-top: 30px; */
+    /* text-indent: 20px; */
+}
+
+.button-Form {
+    background-color: #072ac8;
+    width: 100%;
+    height: 80px;
+    padding: 15px 30px 0 30px;
+    font-size: 1.1em;
+    color: #ffffff;
+    cursor: pointer;
+    border: 0;
+    grid-area: btn;
+}
+
+/* -- contactUs.HTML END ---MOBILE */
+
+/* -- PROJECT.HTML INI ---MOBILE */
+
+.project-Section-Big {
+    /* projectSectionHeader */
+    display: flex;
+    padding: 5%;
+}
+
+.project-Sheet-Big {
+    /* articleDetailsProjects */
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-Name-Big {
+    /* articleDetailsProjects h2 */
+    color: #292E47;
+    line-height: 68px;
+    margin-top: 20px;
+}
+
+.project-Image-Big {
+    /* styleImgHeader */
+    width: 100%;
+    height: 50%;
+}
+
+.project-Info-Big {
+    /* boxInfoProjects */
+    margin-left: 0%;
+}
+
+.project-Short-Description-Big {
+    /* paragrahpX */
+    color: #6a6a72;
+    font-weight: 10;
+}
+
+
+
+
+
+
+
+/* -- PROJECT.HTML END ---MOBILE */
+
+
 
 /* ------------------------------ */
 /* ------ FIRST MOBILE END ----- */
 /* ---------------------------- */
 
 
-/* -- BREAK POINT 1024 INI --- */
-@media (min-width: 1024px) {
+/* -- BREAK POINT 1440 INI --- */
 
-    /* ------- NAVBAR INI -------@1024 */
+
+@media (min-width: 1440px) {
+
+    /* ------ BURGUER INI -------@1440 */
+    .dropbtn label {
+        display: none;
+    }
+
+    .dropdown button {
+        display: none;
+    }
+
+    /* ------ BURGUER END -------@1440 */
+    /* ------- NAVBAR INI -------@1440 */
 
     header {
+        display: flex;
         padding: 70px 170px 0 170px;
     }
 
     .logo-Circle img {
         width: 110%;
+        margin-right: 15%;
+    }
+
+    .dropdown {
+        display: flex;
+        flex-direction: row;
+        bottom: 57px;
+        margin: 0 auto;
     }
 
     .nav-Menu {
         display: flex;
-        gap: 40%;
+        flex-direction: row;
+        align-items: center;
         font-size: 17px;
         justify-content: center;
         font-weight: 500;
+        box-shadow: none;
+        margin: 0 auto;
+    }
+
+    .nav-Menu li {
+        list-style: none;
+        display: block;
+        padding: 5%;
+        background: none;
+        border-bottom: none;
+    }
+
+    .nav-Menu li a {
+        text-decoration: none;
+        color: #6B708D;
+    }
+
+    .nav-Menu li a:hover {
+        color: #072AC8;
     }
 
     #home {
@@ -561,9 +867,13 @@ main {
         font-weight: 600;
     }
 
-    #home:hover{
+    #home:hover {
         color: #6B708D;
     }
+
+    /* .dropdown:hover .nav-Menu {
+        display: none;
+    } */
 
     .contact-Us {
         display: block;
@@ -591,18 +901,20 @@ main {
         }
     }
 
-    /* ------- NAVBAR END -------@1024 */
-    /* -------- MAIN INI --------@1024 */
+    /* ------- NAVBAR END -------@1440 */
+
+
+    /* -------- MAIN INI --------@1440 */
     main {
         width: 100%;
         margin: 0;
     }
 
-    /* -------- MAIN END --------@1024 */
-    /* ---- HERO SECTION INI ----@1024 */
+    /* -------- MAIN END --------@1440 */
+    /* ---- HERO SECTION INI ----@1440 */
 
     .hero-Section {
-        padding: 100px 170px 0 170px;
+        padding: 50px 170px 0 170px;
         display: flex;
     }
 
@@ -611,6 +923,7 @@ main {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+
     }
 
     .hero-Content {
@@ -621,28 +934,29 @@ main {
         text-align: left;
         width: 100%;
         height: auto;
+
     }
 
     .hero-Content h1 {
         text-align: left;
-        line-height: 70px;
+        line-height: 110%;
         margin: 0;
-        font-size: 60px;
-        max-width: 530px;
+        font-size: 370%;
+        max-width: 89%;
         font-weight: 700;
     }
 
     p {
-        margin: 7% 0;
+        margin: 5% 0 7%;
     }
 
     .content-Paragraph {
         display: flex;
         width: auto;
-        max-width: 435px;
+        max-width: 80%;
         text-align: left;
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 127%;
+        line-height: 150%;
         margin: 0;
         font-weight: 400;
     }
@@ -657,12 +971,11 @@ main {
     }
 
     .getInTouch-Button {
-        margin-right: 50px;
         display: block;
         transition: 0.5s;
-        font-size: 17px;
-        line-height: 22px;
-        padding: 15px 37px;
+        font-size: 90%;
+        line-height: 100%;
+        padding: 0 auto;
         margin-bottom: 0;
         font-weight: 500;
     }
@@ -673,9 +986,9 @@ main {
     }
 
     .seeOurWork-Button {
-        font-size: 17px;
+        font-size: 90%;
         font-weight: 500;
-        line-height: 22px;
+        line-height: 100%;
         padding: 15px 30px;
         cursor: pointer;
         border: #F4F6FC solid thin
@@ -716,8 +1029,8 @@ main {
         right: -17%;
     }
 
-    /* ---- HERO SECTION END ----@1024 */
-    /* --- CLIENT SECTION INI ---@1024 */
+    /* ---- HERO SECTION END ----@1440 */
+    /* --- CLIENT SECTION INI ---@1440 */
     .client-Section {
         display: flex;
         margin-top: 150px;
@@ -758,11 +1071,11 @@ main {
     }
 
 
-    /* --- CLIENT SECTION END ---@1024 */
-    /* -- PROJECT SECTION iINI --@1024 */
+    /* --- CLIENT SECTION END ---@1440 */
+    /* -- PROJECT SECTION iINI --@1440 */
 
     .project-Section {
-        margin-top: 200px;
+        margin-top: 150px;
         padding: 0 170px;
     }
 
@@ -838,10 +1151,10 @@ main {
         padding-top: 10px;
     }
 
-    /* -- PROJECT SECTION END --@1024 */
-    /* -TESTIMONIAL SECTION iNI-@1024 */
+    /* -- PROJECT SECTION END --@1440 */
+    /* -TESTIMONIAL SECTION iNI-@1440 */
     .testimonial-Section {
-        margin-top: 100px;
+        margin-top: 150px;
         padding: 0 60px;
         position: relative
     }
@@ -874,10 +1187,10 @@ main {
         bottom: 10%;
     }
 
-    /* -TESTIMONIAL SECTION END-@1024  */
-    /* -- SERVICES SECTION iNI --@1024 */
+    /* -TESTIMONIAL SECTION END-@1440  */
+    /* -- SERVICES SECTION iNI --@1440 */
     .services-Section {
-        margin-top: 200px;
+        margin-top: 150px;
         padding: 0 170px;
     }
 
@@ -885,11 +1198,15 @@ main {
         height: 325px;
     }
 
-    /* -- SERVICES SECTION END --@1024 */
-    /* ----- CTA SECTION ini ----@1024 */
+    /* -- SERVICES SECTION END --@1440 */
+    /* ----- CTA SECTION ini ----@1440 */
     .cta-Section {
-        margin-top: 200px;
+        margin-top: 130px;
         padding: 0 60px;
+    }
+
+    .cta-Container {
+        height: 400px;
     }
 
     .cta-Container h2 {
@@ -939,8 +1256,8 @@ main {
         left: 4%;
     }
 
-    /* ----- CTA SECTION END ----@1024 */
-    /* --- FOOTER SECTION ini ---@1024 */
+    /* ----- CTA SECTION END ----@1440 */
+    /* --- FOOTER SECTION ini ---@1440 */
     .footer-Section {
         margin-top: 150px;
         padding: 0 200px 100px 200px;
@@ -957,7 +1274,7 @@ main {
         width: 40%;
     }
 
-    .footer-Article img{
+    .footer-Article img {
         width: 100px;
         height: 30px;
     }
@@ -985,11 +1302,42 @@ main {
         font-size: 17px;
     }
 
+    /* --- FOOTER SECTION END ---@1440 */
+    /* ------------------------------- */
+    /* -- contactUs.HTML iNI ----@1440 */
 
 
+    .contactUs-Section2 {
+        margin: 100px 0 140px;
+        padding: 0 170px;
+    }
 
-    /* --- FOOTER SECTION END ---@1024 */
+    .contactUs-Section2 h2 {
+        margin-bottom: 20px;
+        font-size: 1.75em;
+    }
 
+    .contact-Form2 {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "name  name"
+            "email phone"
+            "message  message"
+            "btn btn";
+    }
+
+    .input:valid {
+        color: #072AC8;
+    }
+
+    #text-To-User {
+        background-color: #A2D6F9;
+        width: 100%;
+        height: 36px;
+        margin: 0;
+    }
+
+    /* -- contactUs.HTML END ----@1440 */
 }
 
-/* -- BREAK POINT 1024 END -- */
+/* -- BREAK POINT @1440 END -- */
