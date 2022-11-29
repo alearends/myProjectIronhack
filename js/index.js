@@ -29,13 +29,15 @@ async function getProjectSection() {
       description.textContent =
         "UI Design & App Development. This is a brief description of this article, that shouldn't be longer 2 lines.";
       
-
       const learnMore = document.createElement("a");
       learnMore.className = "learn-More";
-      learnMore.setAttribute("href", "/project.html");
-
+      learnMore.innerText = "Learn More";
+      learnMore.setAttribute("href", `/project.html?id=${i}`);
+      
       article.append(img, div);
       div.append(titulo, description, learnMore);
+     
+
 
       projectSection.append(article);
     }
