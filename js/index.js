@@ -46,50 +46,6 @@ async function getProjectSection() {
 
 getProjectSection();
 
-// async function getDescription() {
-//   const response = await fetch(url);
-//   const photos = await response.json();
-//   photos.forEach((ph, i) => {
-//     if (i < 3) {
-//       // Código para crear la tajeta
-//       const article = document.createElement("article");
-//       article.className = "project-Sheet";
-
-//       const img = document.createElement("img");
-//       article.className = "project-Image";
-//       img.src = ph.download_url;
-//       // img.src = "./project-assets/projects-section/1.jpg"
-
-//       const div = document.createElement("div");
-//       div.className = "project-Info";
-
-//       const titulo = document.createElement("h3");
-//       titulo.className = "project-Name";
-//       titulo.textContent = ph.author;
-//       // titulo.textContent = "Title Article 1"
-
-//       const description = document.createElement("p");
-//       description.className = "project-Short-Description";
-//       description.textContent =
-//         "UI Design & App Development. This is a brief description of this article, that shouldn't be longer 2 lines.";
-
-//       const learnMore = document.createElement("a");
-//       learnMore.className = "learn-More";
-//       learnMore.textContent = "Learn More";
-//       learnMore.setAttribute("href", "/project.html");
-      
-
-//       article.append(img, div);
-//       div.append(titulo, description, learnMore);
-
-//       projectSection.append(article);
-//     }
-//   });
-// }
-
-// getPhotosAndAuthor();
-
-
 
 // Pasos:
 // 1. buscas la URL de la API
@@ -103,18 +59,24 @@ getProjectSection();
 // 4. luego vas a tu URL y miras donde esta cada elemento que tu quieres traerte de la url
 // 5. vas a tu función y sustituyes los datos hardcordeados por los del API (el.nombreElemEnURL)
 
-{
-  /* Tarjeta a Clonar:
 
-<article class="project-Sheet" id="article1">
-  <img src="./project-assets/projects-section/1.jpg" alt="" class="project-Image">
-  <div class="project-Info">
-    <h3 class="project-Name">Title Article 1 (Simplify)</h3>
-    <p class="project-Short-Description">
-      UI Design & App Development. This is a brief description of this
-        article, that shouldn't be longer 2 lines. 
-    </p>
-    <a class="learn-More" href="/project.html">Learn More </a>
-  </div>
-</article> */
+// Respuesta de Call to Action Section
+const emailJSindex = document.getElementById("email");
+const errorJSindex = document.getElementById("error-Index");
+errorJSindex.style.color = 'dark';
+
+
+function subscribe(){
+  console.log("enviando formulario");
+
+  const errorMsgsIndex = [];
+
+  if(emailJSindex.value === null || emailJSindex.value === "" || emailJSindex.value.length < 15){
+    errorMsgsIndex.push('❌ Invalid email format.');
+}else{errorMsgsIndex.push('⚠️ Oops! Something went wrong while submitting the form.');};
+
+errorJSindex.innerHTML = errorMsgsIndex.join("<br>");
+
+return false;
+
 }

@@ -150,11 +150,11 @@ header {
         display: inline-block;
     }
 
-    #contact-Us-2{
+    #contact-Us-2 {
         font-size: 14px;
     }
 
-    #turn-On{
+    #turn-On {
         display: none;
     }
 }
@@ -651,10 +651,6 @@ main {
 /* ------------------------------- */
 /* -- contactUs.HTML iNI ---MOBILE */
 
-.contactUs-Container2 {
-    width: 100%;
-}
-
 .contactUs-Section2 {
     padding: 0 30px;
     margin: 80px 0 100px;
@@ -665,6 +661,10 @@ main {
     margin: 50px 0 40px;
     color: #072AC8;
     font-weight: 700;
+}
+
+.contactUs-Container2 {
+    width: 100%;
 }
 
 .contact-Form2 {
@@ -752,6 +752,15 @@ main {
     grid-area: btn;
 }
 
+.button-Form:active {
+    transform: scale(0.98);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    background-color: #514d67;
+    color: #ffffff;
+
+}
+
 /* -- contactUs.HTML END ---MOBILE */
 
 /* -- PROJECT.HTML INI ---MOBILE */
@@ -765,8 +774,8 @@ main {
     display: flex;
     flex-direction: column;
     background-color: white;
-    box-shadow: 0px 38.7755px 77.551px rgba(0, 0, 0, 0.1);
-
+    box-shadow: 0px 38.7755px -77.551px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(#F2F4FC, #ffffff);
 }
 
 .project-Name-Big {
@@ -781,15 +790,15 @@ main {
     align-items: flex-start;
 }
 
-.project-Short-Description-Big{
+.project-Short-Description-Big {
     width: 100%;
     font-size: 70%;
-    text-align: left; 
+    text-align: left;
     font-weight: 500;
     margin: 10px 0;
 }
 
-.project-Info-Date{
+.project-Info-Date {
     width: 100%;
     font-size: 70%;
     text-align: left;
@@ -813,7 +822,7 @@ main {
     font-weight: 10;
 }
 
-.container-Project-Text{
+.container-Project-Text {
     margin: 0 5px 0 25px;
 }
 
@@ -902,11 +911,7 @@ main {
         color: #292E47;
     }
 
-    /* .dropdown:hover .nav-Menu {
-        display: none;
-    } */
-
-    #contact-Us-2 a{
+    #contact-Us-2 a {
         display: none;
     }
 
@@ -1267,7 +1272,7 @@ main {
 
     #email {
         height: 35px;
-        border: #FFC60C solid thin;
+        border: #FFC600 solid thin;
     }
 
     #submit {
@@ -1275,20 +1280,27 @@ main {
         margin-left: 20px;
         display: block;
         transition: 0.5s;
-        border: #FFC60C solid thin;
+        border: #FFC600 solid thin;
     }
 
-    #submit:hover {
-        background-color: #FFC60C;
+    #submit:active {
+        background-color: #FFC600;
         color: #292E47;
         font-weight: 500;
         border: #072AC8 solid thin;
+        transform: scale(0.98);
+        /* Scaling button to 0.98 to its original size */
+        box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
     }
 
     .envelop-Icon {
         position: absolute;
         top: 22%;
         left: 4%;
+    }
+
+    #error-Index{
+        padding-top: 20px;
     }
 
     /* ----- CTA SECTION END ----@1440 */
@@ -1374,13 +1386,13 @@ main {
 
     /* -- contactUs.HTML END ----@1440 */
 
-     /* ---- PROJECT.HTML iNI ----@1440 */
-    
-    .project-Section-Big{
+    /* ---- PROJECT.HTML iNI ----@1440 */
+
+    .project-Section-Big {
         padding: 70px 170px 0 170px;
     }
 
-    .project-Name-Big{
+    .project-Name-Big {
         font-size: 40px;
     }
 
@@ -1391,21 +1403,21 @@ main {
         align-items: center;
     }
 
-    .project-Short-Description-Big{
+    .project-Short-Description-Big {
         font-size: 24px;
         font-weight: 400;
     }
 
-    .project-Info-Date{
+    .project-Info-Date {
         text-align: right;
         font-size: 20px;
     }
 
-.project-Text{
-    font-size: 20px;
-    font-weight: 400;
-    margin-top: 70px;
-}
+    .project-Text {
+        font-size: 20px;
+        font-weight: 400;
+        margin-top: 70px;
+    }
 
 
     /* ---- PROJECT.HTML END ----@1440 */
