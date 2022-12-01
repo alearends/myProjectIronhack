@@ -25,7 +25,7 @@
                     <a href="/">Home</a>
                 </li>
                 <li class="menu">
-                    <a href="/project.html">Project</a>
+                    <a href='/project.html?id=14'>Project</a>
                 </li>
                 <li class="menu">
                     <a href="/index.html#ourServices">Services</a>
@@ -46,22 +46,22 @@
                 <form name="post_info-form" class="contact-Form2">
                     <div class="flex-direction-column name">
                         <label for="userName" class="contact-Title">Full Name *</label>
-                        <input id="userName" type="text" required class="contact-Text-Field" minlength="10" maxlength="100" name="name" placeholder="Enter your full name (more than 10 characters)" />
+                        <input id="userName" name="userName" data-name="UserName" type="text" class="contact-Text-Field" minlength="10" maxlength="250" placeholder="Enter your full name (more than 10 characters)" required/>
                     </div>
 
                     <div class="flex-direction-column email">
                         <label for="userEmail" class="contact-Title">Email</label>
-                        <input id="userEmail" type="email" required class="contact-Text-Field" minlength="15" maxlength="250" name="email" placeholder="✉      Enter your email (more than 15 characters)" />
+                        <input id="userEmail" name="userEmail" data-name="UserEmail" type="email" class="contact-Text-Field" minlength="15" maxlength="250" placeholder="✉      Enter your email (more than 15 characters)" required/>
                     </div>
 
                     <div class="flex-direction-column phone">
                         <label for="userPhone" class="contact-Title">Phone</label>
-                        <input id="userPhone" type="tel" required class="contact-Text-Field" minlegth="10" maxlength="256" name="phone" placeholder="☏       Enter your phone including your country code" />
+                        <input id="userPhone" name="userPhone" data-name="UserPhone" type="tel" class="contact-Text-Field" minlegth="10" maxlength="256" placeholder="☏       Enter your phone including your country code" required/>
                     </div>
 
                     <div class="flex-direction-column message">
                         <label for="userMessage" class="contact-Title">Message</label>
-                        <textarea id="userMessage" required minlength="10" maxlength="100" name="field" class="contact-Text-Field textArea-Field" placeholder="✍         Please write a message (more than 10 characters)" ></textarea>
+                        <textarea id="userMessage" name="userMessage" data-name="UserMessage" minlength="10" maxlength="100" class="contact-Text-Field textArea-Field" placeholder="✍         Please write a message (more than 10 characters)" required></textarea>
                     </div>
 
                     <button id="submitBtn" onclick='return sendForm();' value="" data-wait="Please wait..." class="button-Form">

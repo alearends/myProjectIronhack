@@ -73,7 +73,7 @@ async function getProjectSectionBig(){
 function fecha() {
 const month = new Array ("January","February","March","April","May","June","July","August","September","October","November","December");
 let f = new Date();
-const FechaFinal = (month[f.getMonth()] + " " + f.getDate() + "," +  f.getFullYear());
+const FechaFinal = (month[f.getMonth()] + " " + f.getDate() + ", " +  f.getFullYear());
 return FechaFinal;
 };
 
@@ -122,3 +122,25 @@ async function getProjectSection() {
 }
 
 getProjectSection();
+
+
+// Respuesta de Call to Action Section
+const emailJSindex = document.getElementById("email");
+const errorJSindex = document.getElementById("error-Index");
+errorJSindex.style.color = 'dark';
+
+
+function subscribe(){
+    console.log("enviando formulario");
+
+    const errorMsgsIndex = [];
+
+    if(emailJSindex.value === null || emailJSindex.value === "" || emailJSindex.value.length < 15){
+    errorMsgsIndex.push('❌ Invalid email format.');
+    }else{errorMsgsIndex.push('⚠️ Oops! Something went wrong while submitting the form.');};
+
+    errorJSindex.innerHTML = errorMsgsIndex.join("<br>");
+
+    return false;
+
+}

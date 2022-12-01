@@ -22,7 +22,7 @@ function sendForm(){
     };
 
     if(phoneJS.value[0] !== "+" ){
-        errorMsgs.push('☎️ Invalid phone format')
+        errorMsgs.push('☎️ Invalid phone format');
     };
 
     if(messageJS.value.length < 10 || messageJS.value.length > 100){
@@ -31,9 +31,18 @@ function sendForm(){
 
     errorJS.innerHTML = errorMsgs.join("<br>");
 
+    if(errorMsgs.length === 1){
+        alert("⚠️ Oops! Something went wrong while submitting the form.");
+    }
+
+    // let sum = errorMsgs.length;
+
+
+    // console.log(`hay ${sum} errores`);
+    // console.log(`hay ${messageJS.value.length} caracteres`);
+
     return false; 
 }
-
 
 
 //     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
